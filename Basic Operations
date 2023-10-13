@@ -1,0 +1,10 @@
+#include<iostream>
+using namespace std;
+int main(){
+	 int a=125,b=60;
+	 cout<<a+b<<endl; //185
+	 cout<<a-b<<endl; //65
+     cout<<a*b<<endl; //7500
+     cout<<a/b<<endl; //2
+     cout<<a%b<<endl; //5
+	}
