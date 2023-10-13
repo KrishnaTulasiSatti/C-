@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main(){
+	  char c1='a';
+	  char c2='b';
+	  cout<<c1<<endl<<c2<<endl;  //a
+	                             //b
+      char value=65; //A
+      cout<<value<<endl;
+      cout<<static_cast<int>(value)<<endl; //65
+    
+	}
