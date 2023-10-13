@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+int main(){
+       bool flag = true;
+       cout<<flag<<endl; //1
+       flag = false;
+       cout<<flag<<endl; //0
+       cout<<sizeof(bool)<<endl; //1
+       cout<<boolalpha<<flag<<endl; //false
+       flag=true;
+       cout<<boolalpha<<flag<<endl;  //true
+	}
