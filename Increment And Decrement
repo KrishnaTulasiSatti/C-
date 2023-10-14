@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a=5;
+	cout<<a++<<endl; //Post increment--> 5
+	cout<<a<<endl;                     //6
+	cout<<++a<<endl; //Pre increment--> 7
+	cout<<a<<endl;                     //7
+	cout<<a--<<endl; //Post decrement--> 7
+	cout<<a<<endl;                     //6
+	cout<<--a<<endl; //Pre decrement--> 5
+	cout<<a<<endl;                     //5
+}
