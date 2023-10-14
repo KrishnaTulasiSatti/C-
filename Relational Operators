@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int a=19,b=67;
+  cout<<boolalpha;
+  cout<< (a<b) <<endl; //True
+  cout<< (a>b) <<endl; //False
+  cout<< (a==b) <<endl; //False
+  cout<< (a!=b) <<endl; //True
+  /*If you don't use brackets then you will get error.....
+      because the precendence of << is greater than '<','>','=="
+      */
+}
