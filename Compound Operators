@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int value=45;
+    cout<<value<<endl; //45
+    value+=5;          //50
+    cout<<value<<endl;
+    value-=5;          //45
+    cout<<value<<endl;
+    value*=2;          //90
+    cout<<value<<endl;
+    value/=3;          //30
+    cout<<value<<endl;    
+}
