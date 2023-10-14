@@ -1,0 +1,44 @@
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main()
+{    // 1. endl is used as \n
+     cout << "Hello" <<endl;
+     cout << "world" <<endl;
+     // 2. setw() is used to give spaces b/w words
+     cout <<  "Last Name" << "First Name" << " Age " <<endl;
+     cout << "Krishna" << "Tulasi" << "18" <<endl;
+     cout << setw(10) << "Last Name" << setw(10) << "  First Name" <<setw(5) << "Age " <<endl;
+     cout << setw(10) << "Krishna" << setw(10) << "Tulasi" <<setw(5) << "18" <<endl;
+     cout << setfill('-');  //Fill the spaces
+     cout << setw(10) << "Last Name" << setw(10) << "  First Name" <<setw(5) << "Age " <<endl;
+     cout << setw(10) << "Krishna" << setw(10) << "Tulasi" <<setw(5) << "18" <<endl;
+     // 3. boolalpha and noboolalpha
+     bool a=true,b=false;
+     cout << boolalpha;
+     cout << a << endl << b << endl; // true   false
+     cout << noboolalpha;
+     cout << a << endl << b << endl; // 1   0
+     // 4. showpos and noshowpos --> show or hide the + sign for positive numbers
+     int pos=34,neg=-45;
+     cout << showpos;
+     cout << pos <<endl;  //+34
+     cout << neg <<endl;  //-45
+     cout << noshowpos;
+     cout << pos <<endl;  //34
+     cout << neg <<endl;  //-45
+     // 5. setprecision --> no. of digits for a floating point number(default) is 6
+     float m =3.2162710812187617971628;
+     cout << m << endl;
+     cout << setprecision(8) << m << endl;  // Give correct values upto 6 palces, remaining digits are garbage values
+     cout << setprecision(10) << m << endl;
+	 cout << setprecision(16) << m << endl;
+	 long double n =3.2162710812187617971628;
+     cout << n << endl;
+     cout << setprecision(8) << n << endl; 
+     cout << setprecision(10) << n << endl;
+	 cout << setprecision(16) << n << endl;
+     
+     
+     
+}
