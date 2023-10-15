@@ -1,0 +1,40 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+    //Overflow 
+
+    unsigned char data = 250;
+
+    ++data;
+   cout << "data : " << static_cast<int>(data) <<endl;
+
+    ++data;
+   cout << "data : " << static_cast<int>(data) <<endl;
+
+    ++data;
+   cout << "data : " << static_cast<int>(data) <<endl;
+
+    ++data;
+   cout << "data : " << static_cast<int>(data) <<endl;
+
+    ++data; 
+   cout << "data : " <<  static_cast<int>(data) <<endl; // 255
+
+    ++data;  // Overflow
+   cout << "data : " << static_cast<int>(data) <<endl; // 256-->0
+
+   ++data;
+    cout << "data : " << static_cast<int>(data) <<endl; //257-->1
+
+    data = 1;                        // Like a circle.....
+
+    --data;
+   cout << "data : " << static_cast<int>(data) <<endl;  //0
+
+    --data;
+   cout << "data : " << static_cast<int>(data) <<endl;  //255
+
+   
+    return 0;
+}
