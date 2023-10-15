@@ -2,7 +2,8 @@
 #include<iomanip>
 using namespace std;
 int main()
-{    // 1. endl is used as \n
+{   
+     // 1. endl is used as \n
      cout << "Hello" <<endl;
      cout << "world" <<endl;
      // 2. setw() is used to give spaces b/w words
@@ -38,7 +39,30 @@ int main()
      cout << setprecision(8) << n << endl; 
      cout << setprecision(10) << n << endl;
 	 cout << setprecision(16) << n << endl;
+   //6. showpoint and noshowpoint : show trailing zeros if necessary
+    double d = 34.1;
+    double e = 101.99;
+    double f = 12.0;
+    int    g = 45;
+    
+   cout <<endl;
+   cout << "noshowpoint (default) : " <<endl;
+   cout << "d : " << d <<endl;
+   cout << "e : " << e <<endl;
+   cout << "f : " << f <<endl; // 12
+   cout << "g : " << g <<endl;
+    
+   cout <<endl;
+   cout << "showpoint: " <<endl;
+   cout <<showpoint;
+   cout << "d : " << d <<endl;
+   cout << "e : " << e <<endl;
+   cout << "f : " << f <<endl; // 12.0
+   cout << "g : " << g <<endl;
+
+  }
+
      
      
      
-}
+
